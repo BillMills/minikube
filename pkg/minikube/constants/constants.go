@@ -164,6 +164,7 @@ var Preflights = []string{
 	// We use --ignore-preflight-errors=Swap since minikube.iso allocates a swap partition.
 	// (it should probably stop doing this, though...)
 	"Swap",
+	"SystemVerification",
 	// We use --ignore-preflight-errors=CRI since /var/run/dockershim.sock is not present.
 	// (because we start kubelet with an invalid config)
 	"CRI",
